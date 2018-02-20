@@ -28,8 +28,7 @@ class GildedRose {
                     }
                 }
             }
-
-
+            
             if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
                 item.sellIn--;
             }
