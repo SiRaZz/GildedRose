@@ -1,15 +1,14 @@
-package com.example.GildedRose;
+package com.example.GildedRose.utils;
 
-class GildedRose {
-    Item[] items;
+import com.example.GildedRose.model.Item;
+
+import java.util.List;
+
+public class GildedRose {
 
     private static final Integer ITEM_QUALITY_50 = 50;
 
-    public GildedRose(Item[] items) {
-        this.items = items;
-    }
-
-    public void updateQuality() {
+    public List<Item> updateQuality(List<Item> items) {
         for (Item item : items) {
             if (!item.name.equals("Aged Brie") && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (item.quality > 0 && !item.name.equals("Sulfuras, Hand of Ragnaros")) {
@@ -46,5 +45,6 @@ class GildedRose {
                 }
             }
         }
+        return items;
     }
 }

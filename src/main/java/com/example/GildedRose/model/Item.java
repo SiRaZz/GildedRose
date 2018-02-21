@@ -1,4 +1,4 @@
-package com.example.GildedRose;
+package com.example.GildedRose.model;
 
 public class Item {
 
